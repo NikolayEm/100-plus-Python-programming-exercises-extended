@@ -42,6 +42,21 @@ print("\b")
 ```python
 print(*(i for i in range(2000, 3201) if i%7 == 0 and i%5 != 0), sep=",")
 ```
+
+```
+-**Using function**
+
+```python
+def numbers():
+    result = []
+    for number in range(2000, 3201):
+        if (number % 7 == 0) and (number % 5 != 0):
+            result.append(str(number))
+    print(','.join(result))
+```
+
+numbers()
+
 # Question 2
 
 ### **Question:**
