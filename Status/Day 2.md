@@ -227,6 +227,21 @@ mylist = input().split(',')
 print(*(round(sqrt(2*C*int(D)/H)) for D in mylist), sep=",")
 ```
 ---
+```python
+
+'''Solution by: saxenaharsh24
+'''
+
+my_list = [int(x) for x in input('').split(',')]
+C, H, x = 50, 30, []
+
+for D in my_list:
+    Q = ((2*C*D)/H)**(1/2)
+    x.append(round(Q))
+
+print(','.join(map(str, x)))
+```
+---
 
 # Question 7
 
@@ -336,6 +351,17 @@ lst = input().split(',')
 lst.sort()
 print(",".join(lst))
 ```
+---
+```python
+'''Solution by Poonam-glitch
+'''
+def my_func(e):
+    return e[0]
+
+my_list = input('Enter a comma separated string: ').split(",")
+my_list.sort(key=my_func)
+print(",".join(my_list))
+```
 
 ---
 
@@ -411,6 +437,19 @@ def user_input():
 
 for line in map(str.upper, user_input()):
     print(line)
+```
+
+```python
+'''Soltuion by: hajimalung baba
+'''
+def inputs():
+    while True:
+        string = input()
+        if not string:
+            return
+        yield string
+
+print(*(line.upper() for line in inputs()),sep='\n')
 ```
 
 ---

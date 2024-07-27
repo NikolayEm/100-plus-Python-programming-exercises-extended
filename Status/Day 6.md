@@ -166,6 +166,24 @@ for i in a:
         print(i)
 ```
 
+**OR**
+
+```python
+import re
+def multiple (patterns, string):
+  for i in patterns:
+    if not re.search(i, string):
+      return False
+  
+  if 6 <= len(string) <= 12:
+    return True
+  else:
+    return False
+x = str(input("Type password: "))
+patterns = [r"[a-z]", r"[A-Z]", r"[0-9]", r"[$|#|@]"]
+print(multiple(patterns, x))
+```
+
 ---
 
 # Question 19
@@ -231,7 +249,7 @@ while True:
         break
     lst.append(tuple(s))
 
-lst.sort(key= lambda x:(x[0],x[1],x[2]))  # here key is defined by lambda and the data is sorted by element priority 0>1>2 in accending order
+lst.sort(key= lambda x:(x[0],int(x[1]),int(x[2])))  # here key is defined by lambda and the data is sorted by element priority 0>1>2 in accending order
 print(lst)
 ```
 
@@ -239,7 +257,7 @@ print(lst)
 
 ## Conclusion
 
-**_Before the above problems, I didn't even know about re(regular expression) module and its use. I didn't even know how to sort by multiple keys. To solve those problems in different ways I had to explore and learn those syntax.There are a lots of interesting stuffs in re module though I faced quite a bit hardship to understand many of them._**
+**_Before the above problems, I didn't even know about re(regular expression) module and its use. I didn't even know how to sort by multiple keys. To solve those problems in different ways I had to explore and learn those syntax. There are a lots of interesting stuffs in re module though I faced quite a bit hardship to understand many of them._**
 
 [**_go to previous day_**](https://github.com/darkprinx/100-plus-Python-programming-exercises-extended/blob/master/Status/Day%205.md "Day 5")
 

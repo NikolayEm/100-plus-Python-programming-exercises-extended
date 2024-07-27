@@ -203,6 +203,38 @@ for sub in subjects:
         for obj in objects:
             print("{} {} {}".format(sub,verb,obj))
 ```
+---
+```python
+
+'''Solution by: popomaticbubble
+'''
+import itertools
+subject = ["I", "You"]
+verb = ["Play", "Love"]
+objects = ["Hockey","Football"]
+
+sentence = [subject, verb, objects]
+n = list(itertools.product(*sentence))
+for i in n: 
+    print(i)
+```
+---
+```python
+
+'''Solution by: lcastrooliveira
+'''
+from itertools import product
+
+def question_79():
+    subject = ["I", "You"]
+    verb = ["Play", "Love"]
+    object = ["Hockey", "Football"]
+    prod = [p for p in product(range(2), repeat=3)]
+    for combination in prod:
+        print(f'{subject[combination[0]]} {verb[combination[1]]} {object[combination[2]]}')
+
+question_79()
+```
 
 ---
 

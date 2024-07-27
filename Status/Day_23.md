@@ -128,8 +128,8 @@ if __name__ == '__main__':
 
 ---
 ```python
-'''Solution by: mishrasunny-coder
-'''
+"""Solution by: mishrasunny-coder
+"""
 import textwrap
 
 string = input()
@@ -139,8 +139,8 @@ print(textwrap.fill(string,width))
 ```
 ---
 ```python
-'''solution by  : Prashanth
-'''
+"""solution by  : Prashanth
+"""
 from textwrap import wrap
 x = str(input(': '))
 w = int(input())
@@ -148,7 +148,35 @@ z = list(wrap(x, w))
 for i in z:
     print(i)
 ```
+---
+```python
+"""solution by  : saxenaharsh24
+"""
+import textwrap
+string = input('')
+print('\n'.join(textwrap.wrap(string, width= int(input('')))))
+```
+---
+```python
+"""solution by  : popomaticbubble
+"""
+import itertools
+string = input("> ")
+width_length = int(input("What is the width of the groupings? "))
 
+def grouper(string, width):
+    iters = [iter(string)] * width
+    return itertools.zip_longest(*iters, fillvalue='')
+
+def displayer(groups):
+    for x in groups:
+        if x == '':
+            continue
+        else:
+            print(''.join(x))
+
+displayer(grouper(string, width_length))
+```
 ---
 # Question 97
 
@@ -213,6 +241,22 @@ def print_rangoli(size):
 if __name__ == '__main__':
     n = int(input())
     print_rangoli(n)
+```
+---
+```python
+'''Solution by: suggula jaswanth
+'''
+def rangoli(n):
+    # your code goes here
+    l1=list(map(chr,range(97,123)))
+    x=l1[n-1::-1]+l1[1:n]
+    mid=len('-'.join(x))
+    for i in range(1,n):
+        print('-'.join(l1[n-1:n-i:-1]+l1[n-i:n]).center(mid,'-'))
+    for i in range(n,0,-1):
+        print('-'.join(l1[n-1:n-i:-1]+l1[n-i:n]).center(mid,'-')) 
+rangoli(5)
+
 ```
 
 ---

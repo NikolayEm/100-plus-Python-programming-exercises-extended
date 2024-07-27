@@ -60,6 +60,17 @@ def f(n):
 n = int(input())
 print(f(n))
 ```
+---
+```python
+
+'''Solution by: NikolayEm
+'''
+
+n = int(input())
+f = lambda x: f(x-1)+100 if x > 0 else 0
+print(f(n))
+
+```
 
 ---
 
@@ -126,6 +137,17 @@ n = int(input())
 print(f(n))
 ```
 
+---
+```python
+
+'''Solution by: NikolayEm
+'''
+
+n = int(input())
+f = lambda x: 0 if x == 0 else 1 if x == 1 else f(x-1)+f(x-2)
+print(','.join([str(f(x)) for x in range(0, n+1)]))
+
+```
 ---
 
 # Question 62
@@ -217,7 +239,27 @@ n = int(input())
 print_fiblist(n)
 
 ```
+---
+```python
+'''Solution by: lcastrooliveira
+'''
 
+def question_62(n):
+    if n == 0:
+        return [0]
+    if n == 1:
+        return [0, 1]
+    sequence = [0, 1]
+    a, b = 0, 1
+    for x in range(2, n+1):
+        c = a + b
+        sequence.append(c)
+        a = b
+        b = c
+    return sequence
+
+print(question_62(10))
+```
 ---
 
 # Question 63

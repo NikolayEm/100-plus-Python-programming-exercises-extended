@@ -1,6 +1,11 @@
-# Python-programming-exercises
+# Break The Ice With Python
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/darkprinx/100-plus-Python-programming-exercises-extended/master?filepath=notebooks%2F)
+### A journey of 100+ simple yet interesting problems which are explained, solved, discussed in different pythonic ways
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/darkprinx/100-plus-Python-programming-exercises-extended/master?filepath=notebooks%2F)<br>
+[![Deepnote](https://deepnote.com/buttons/try-in-a-jupyter-notebook.svg
+)](https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2Fdarkprinx%2F100-plus-Python-programming-exercises-extended%2Fblob%2Fmaster%2Fnotebooks%2FDay_01.ipynb)
+
 ---------------------
 ##	Introduction 
 
@@ -88,5 +93,11 @@
 * **[Day 24](https://github.com/darkprinx/100-plus-Python-programming-exercises-extended/blob/master/Status/Day_24.md "Day 24 Status")**- ***Question 100-103***
 
 
-----------------------
-### **_Sharing new questions and solutions are warmly welcome. Be a proud contributor of this repository by just making a pull request of your changes._**  
+
+---
+
+## 🌱 Empower dedication with your generosity
+#### Every single coffee boosts towards greater motivation, turning compassion into action. Show your kind support with just a little click! 😃
+
+<a href="https://www.buymeacoffee.com/darkprinx" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+
